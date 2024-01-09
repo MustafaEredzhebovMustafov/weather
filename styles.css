@@ -1,0 +1,134 @@
+body{
+    height: 100vh;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+}
+.card{
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 35px;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    padding-bottom: 30px;
+    background-color: rgb(255, 255, 255, 0.66);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+button{
+    padding: 15px 15px;
+    margin: 20px 10px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover{
+    background-color:rgba(0, 0, 0, 0.1);
+}
+
+.search-bar{
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 18px;
+    background: rgb(240, 240, 240);
+    color: black;
+    font-family: inherit;
+    font-size: 120%;
+}
+.searchbar::placeholder{
+    font-size: 12px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+h1.temp {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 60px;
+}
+.description{
+    text-transform: capitalize;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 20px;
+}
+.city{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.humidity{
+    font-size: 20px;
+    display: flex;
+    align-items:center ;
+    margin-left: 18px;
+    margin-right: 24px;
+}
+.wind{
+    font-size: 20px;
+    margin-left: 18px;
+}
+.humidity-container{
+    display: flex;
+    align-items: center;
+}
+.wind-container{
+    display: flex;
+    align-items: center;
+}
+.flex{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.weather.loading{
+    visibility: hidden;
+    max-height: 30px;
+    position: relative;
+}
+.weather.loading:after{
+visibility: visible;
+content: "Loading...";
+color:black;
+position: absolute;
+top: 0;
+left: 18px;
+}

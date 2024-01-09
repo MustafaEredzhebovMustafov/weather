@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bg-animation.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <section>
+        <div class='air air1'></div>
+        <div class='air air2'></div>
+        <div class='air air3'></div>
+        <div class='air air4'></div>
+      </section>
+    <div class="card">
+            <div class="search">
+                <input type="text" class="search-bar" placeholder="Search">
+                <button class="search-button"><img src=searchicon.png width="24px" height="24px"></button>
+            </div>
+            <div class="weather loading">
+                <div class="icon"><img src="icon-weather.png" width="120px" height="120px"></div>
+                <div class="description"></div>
+                <h1 class="temp"></h1>
+                <div class="city"></div> 
+                    <div class="flex">
+                        <div class="humidity-container">
+                        <img src="humidity-img.png" width="48px" height="48px">
+                        <div class="humidity"></div>
+                    </div>
+                    <div class="wind-container">
+                        <img src="wind-img.png" width="48px" height="48px">
+                        <div class="wind"></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+</body>
+</html>
